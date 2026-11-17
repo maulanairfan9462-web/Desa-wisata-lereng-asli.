@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --color-cream: #fcf9f2;
+  --color-cream-soft: #f6f3ec;
+  --color-cream-high: #ebe8e1;
+  --color-forest: #1b4d3e;
+  --color-forest-deep: #003629;
+  --color-emerald-leaf: #2e7d5a;
+  --color-sunlight: #d99b26;
+  --color-sunlight-warm: #fdba45;
+  --color-ink: #13241c;
+  --color-ink-muted: #404945;
+  --color-outline-soft: #c0c9c3;
+}
+
+@layer base {
+  html {
+    font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+    background-color: #fcf9f2;
+    color: #13241c;
+    scroll-padding-top: 4.5rem;
+  }
+
+  body {
+    background-color: #fcf9f2;
+    color: #13241c;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+}
+
+.lereng-card-shadow {
+  box-shadow: 0 4px 20px -2px rgba(27, 77, 62, 0.07), 0 2px 6px -1px rgba(27, 77, 62, 0.04);
+}
+
+.lereng-float-shadow {
+  box-shadow: 0 10px 30px -4px rgba(19, 36, 28, 0.12);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
